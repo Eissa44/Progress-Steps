@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bordercolor-empty: #e0e0e0;
+  --bordercolor: #08c;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f7fb;
+}
+
+.progr-container {
+  max-width: 400px;
+}
+
+.progr-container::before {
+  content: "";
+  position: absolute;
+  background-color: var(--bordercolor-empty);
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.progr {
+  background-color: var(--bordercolor);
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: #999;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--bordercolor-empty);
+  transition: all 0.5s;
+}
+
+.circle.active {
+  border-color: var(--bordercolor);
+}
+
+.btn {
+  background-color: var(--bordercolor) !important;
+  color: #fff !important;
+}
+.btn:disabled {
+  background-color: var(--bordercolor-empty) !important;
+  cursor: not-allowed !important;
+}

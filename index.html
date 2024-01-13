@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Roboto path -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrsp path -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- Font Awesome path -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- CSS path -->
+    <link rel="stylesheet" href="CSS/main.css" />
+    <title>Progress Steps</title>
+  </head>
+  <body
+    class="d-flex justify-content-center align-items-center vh-100 overflow-hidden"
+  >
+    <section class="container text-center">
+      <div
+        class="progr-container d-flex justify-content-between position-relative mx-auto mb-5"
+        id="progress"
+      >
+        <div class="progr position-absolute"></div>
+        <div
+          class="circle rounded-circle d-flex justify-content-center align-items-center active"
+        >
+          1
+        </div>
+        <div
+          class="circle rounded-circle d-flex justify-content-center align-items-center"
+        >
+          2
+        </div>
+        <div
+          class="circle rounded-circle d-flex justify-content-center align-items-center"
+        >
+          3
+        </div>
+        <div
+          class="circle rounded-circle d-flex justify-content-center align-items-center"
+        >
+          4
+        </div>
+      </div>
+      <button class="btn px-4 m-2" id="prev" disabled>
+        <i class="fa-solid fa-circle-arrow-left"></i>
+      </button>
+      <button class="btn px-4 m-2" id="netx">
+        <i class="fa-solid fa-circle-arrow-right"></i>
+      </button>
+    </section>
+
+    <!-- Bootstrap Js path -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- Main Js path -->
+    <script src="JS/main.js"></script>
+  </body>
+</html>
